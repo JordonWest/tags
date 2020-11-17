@@ -1,14 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
 <h1>The Ultimate Tag Manager</h1>
 <h1>Hello World!</h1>
-<img src="{{ g.image }}" style="width:300px">
+<img src="{{ g.image }}" />
 <div>
-  {% for tag in tags %}
-    {{ tag.name }}<br>
+  {% for tag in tags %} {{ tag.name }}<br />
   {% endfor %}
 </div>
 <div>
   <form action="/tags" method="POST">
     <label>Enter a tag: </label>
-    <input name="tag-name">
+    <input name="tag-name" />
   </form>
 </div>
